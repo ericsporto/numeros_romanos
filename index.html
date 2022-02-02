@@ -7,7 +7,7 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-	<title>Teste Rota das Oficinas</title>
+	<title>Roman Numbers</title>
 
     <style>
         body {
@@ -44,7 +44,8 @@
     </div>
 	
 	
-    <script type="text/javascript">	
+    <script>	
+
         const numberMap = {
             
             0 : [
@@ -93,7 +94,11 @@
         function romanJs(input){		
         
             input = input.replace(/[^0-9]/, "");
-            if(input == '') return'';
+            if(input == '') 
+                return'';
+            else if (isNaN(input) === true) 
+                return alert('This is not a number! Try again...')
+                        
             
             var number = parseInt(input);
             
